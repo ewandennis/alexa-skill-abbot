@@ -23,11 +23,7 @@ app.launch( (req, res) => {
 
 app.optionMap('who', [
   "Who",
-  "Who's on first",
-  "Who's on first base",
-  "Who is on first",
-  "Who is on first base",
-  "Who is the guy on first base",
+  "{Who's|Who is} {the guy|} on first {base|}",
 ], [
   'Yeah. Who is on first base.',
   "That is the man's name",
@@ -36,10 +32,7 @@ app.optionMap('who', [
 
 app.optionMap('what', [
   "What",
-  "What's on second",
-  "What's on second base",
-  "What is on second",
-  "What is on second base",
+  "{What's|What is} on second {base|}",
   "What is the guy's name on second base"
 ], [
   "Naturally",
@@ -47,10 +40,7 @@ app.optionMap('what', [
 ]); 
 
 app.optionMap('who2',[
-  "Who is on second",
-  "Who's on second",
-  "Who is on second base",
-  "Who's on second base"
+  "{Who's|Who is} on second {base|}",
 ],[
   'No, who is on first. What is on second',
   "The man's name on first base is who"
@@ -65,8 +55,7 @@ app.optionMap('why', [
 ]);
 
 app.optionMap('why2', [
-  "Who's the left fielder",
-  "What's the left fielder",
+  "{Who's|What's} the left fielder",
 ], [
   "No, that's why"
 ]);
@@ -79,10 +68,15 @@ app.optionMap('because', [
 
 app.optionMap('tomorrow', [
   "Tell me the pitcher's name",
-  "What is the pitcher's name",
-  "What's the pitcher's name"
+  "{What is|What's} the pitcher's name",
 ],[
   "Tomorrow"
+]);
+
+app.optionMap('tomorrow2', [
+  "Who's the pitcher?"
+], [
+  "No, tomorrow is the pitcher"
 ]);
 
 app.optionMap('dontcare', [
