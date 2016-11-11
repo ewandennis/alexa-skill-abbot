@@ -14,9 +14,16 @@ app.intent('who', {
       "Who is the guy on first",
       "Who is the guy on first base"
     ]
-  }, (req, resp) => {
-    response.say('Yes');
+  }, (req, res) => {
+    res.say('Yes');
   }
 );
+
+app.error = (err, req, res) => {
+  console.log(err);
+  console.log(req);
+  console.log(res);
+  res.say('Sorry I dropped my guts');
+};
 
 module.exports = app;
