@@ -1,6 +1,6 @@
 # An Alexa Skill: Who's On First?
 
-This is a small Alexa skill which autoresponds to various prompts from Abbott and Costello's Whos On First? sketch. The service is built on the [alexa-app-server](https://www.npmjs.com/package/alexa-app-server] and [alexa-app](https://www.npmjs.com/package/alexa-app) packages.
+This is a small Alexa skill which autoresponds to various prompts from Abbott and Costello's Whos On First? sketch. The service is built on the [alexa-app-server](https://www.npmjs.com/package/alexa-app-server) and [alexa-app](https://www.npmjs.com/package/alexa-app) packages.
 
 [Reference material](http://www.psu.edu/dept/inart10_110/inart10/whos.html).
 
